@@ -1,6 +1,7 @@
 
-function classificacaoIMC (peso, altura) {
+const classificacaoIMC = function (peso, altura) {
   let resultado = peso / (altura ** 2)
+  
   if(resultado < 18.9) {
     return 'Abaixo do peso normal'
   }
@@ -17,4 +18,4 @@ function classificacaoIMC (peso, altura) {
     return 'Obesidade'
   }
 }
-console.log(classificacaoIMC(70, 1,65))
+console.log(classificacaoIMC(70, 1.65))
